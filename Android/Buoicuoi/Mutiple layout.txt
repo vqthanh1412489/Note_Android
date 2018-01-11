@@ -1,0 +1,8 @@
+﻿Khong co xoay: android:screenOrientation= "portraint": Luôn luôn dọc | Ngược lại là ngang.
+		android:configChanes = "screenSize|oriontation" : không load màn hình
+Tạo layout theo thuộc tính chiều ngang, chiều dọc màn hình. tự nhận dạng thiết bị để chọn ra layout phù hợp
+
+Khai báo kich thwoic màn hình nó hỗ trợ> bỏ vô menisfes để qui định màn hình tối thiểu của màn hình được sử dụng
+|| Nguoc lại nữa nhé!
+
+thay đổi kích thwucs các view by code: Google (by code nhé)

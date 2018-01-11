@@ -1,0 +1,7 @@
+
+cd C:\Program Files\Java\jre1.8.0_101\bin
+
+keytool -exportcert -list -v -alias androiddebugkey -keystore %USERPROFILE%\.android\debug.keystore
+
+
+SHA - 1:  29:DA:29:6A:6C:4D:56:99:F3:7A:8D:B4:AE:59:0E:30:2A:81:A7:B5

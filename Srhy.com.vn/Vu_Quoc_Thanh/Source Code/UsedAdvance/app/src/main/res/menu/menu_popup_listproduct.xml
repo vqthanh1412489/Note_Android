@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_admin_listpro_delete"
+        android:title="Delete"></item>
+    <item android:id="@+id/menu_admin_listpro_private"
+        android:title="@string/private_2"></item>
+    <item android:id="@+id/menu_admin_listpro_public"
+        android:title="@string/public_2"></item>
+</menu>

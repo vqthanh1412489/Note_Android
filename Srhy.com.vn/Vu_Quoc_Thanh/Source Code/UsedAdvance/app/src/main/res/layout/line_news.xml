@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:background="@drawable/ct_line_hl"
+        android:weightSum="10"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:padding="2dp"
+            android:layout_weight="3"
+            android:id="@+id/imageViewHinhNews"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/Title"
+            android:layout_marginTop="10dp"
+            android:gravity="center|left"
+            android:paddingLeft="15dp"
+            android:id="@+id/textViewTenNews"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="match_parent"
+            android:text="TextView" />
+    </LinearLayout>
+</RelativeLayout>

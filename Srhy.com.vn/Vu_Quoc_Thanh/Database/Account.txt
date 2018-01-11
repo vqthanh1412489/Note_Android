@@ -1,0 +1,27 @@
+﻿Tài khoản sử dụng trong ứng dụng
+
+ Admin 1:
+	1@gmail.com
+	123456	
+
+Admin 2:
+	vqthanh1@gmail.com     : Mail thật để xác nhận người dùng
+	123456
+	
+Member 1:
+	2@gmail.com
+	123456
+
+Member 2:
+	vqthanh2@gmail.com      : Mail thật để xác nhận người dùng
+	123456
+
+Note: 	+ Có thể đăng ký tài khoản mới.(email để có thể xác nhận tài khoản) 
+		Mặc định khi đăng ký sẽ là tài khoản Member. Để chuyển thành tài khoản admin
+		cần truy cập vô project Firebase để sửa thuộc tính TypeAccount = 1.
+	+ Tài khoản chứa Project Firebase 
+		- Tên tk: vqthanh1412489@gmail.com
+		- pass: vuthanh2546813
+		=> Tên project: UserAdvance
+
+https://www.facebook.com/profile.php?id=100011569322438

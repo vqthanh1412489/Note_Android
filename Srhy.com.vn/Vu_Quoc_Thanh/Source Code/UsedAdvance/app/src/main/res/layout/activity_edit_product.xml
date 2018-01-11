@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:background="@color/background_add"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <android.support.v7.widget.Toolbar
+            android:background="@color/toolbar"
+            android:id="@+id/toolEditPro"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+        </android.support.v7.widget.Toolbar>
+
+        <View
+            android:background="@color/diliver"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:fillViewport="false"
+            android:layout_weight="7">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_full"/>
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:weightSum="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:padding="10dp"
+                        android:id="@+id/imageView1ProEdit"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/plus" />
+
+                    <ImageView
+                        android:padding="10dp"
+                        android:id="@+id/imageView2ProEdit"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/plus" />
+
+                    <ImageView
+                        android:padding="10dp"
+                        android:id="@+id/imageView3ProEdit"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/plus" />
+
+                    <ImageView
+                        android:src="@drawable/plus"
+                        android:padding="10dp"
+                        android:id="@+id/imageView4ProEdit"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:background="@color/diliver"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"></View>
+
+                <EditText
+                    android:id="@+id/editTextNameProEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="@string/input_name" />
+
+                <View
+                    android:background="@color/diliver"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"></View>
+
+                <Spinner
+                    android:id="@+id/spinnerCateProEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" />
+
+                <View
+                    android:background="@color/diliver"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"></View>
+
+                <EditText
+                    android:id="@+id/editTextPriceProEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:ems="10"
+                    android:hint="@string/input_price"
+                    android:inputType="number" />
+                <View
+                    android:background="@color/diliver"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"></View>
+
+                <EditText
+                    android:id="@+id/editTextDecrProEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/input_descrition"
+                    android:inputType="textMultiLine" />
+                <View
+                    android:background="@color/diliver"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"></View>
+
+
+                <TextView
+                    android:id="@+id/textViewZoneProEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/chooceCity" />
+
+                <View
+                    android:background="@color/diliver"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"></View>
+
+                <Spinner
+                    style="@style/Spinner"
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" />
+
+                <View
+                    android:background="@color/diliver"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"></View>
+
+                <Spinner
+                    style="@style/Spinner"
+                    android:id="@+id/spinnerStatusProEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" />
+
+                <View
+                    android:background="@color/diliver"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"></View>>
+
+                <Spinner
+                    style="@style/Spinner"
+                    android:id="@+id/spinnerStatusSellProEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/progressBarEditProMember"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <LinearLayout
+        android:id="@+id/linearConfirmEdit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+
+        <ImageButton
+            android:layout_marginTop="150dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:id="@+id/imageButtonEdit247"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/confirm" />
+    </LinearLayout>
+</FrameLayout>

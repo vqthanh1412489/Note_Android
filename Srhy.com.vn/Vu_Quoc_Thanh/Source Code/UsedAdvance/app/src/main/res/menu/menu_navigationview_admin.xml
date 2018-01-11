@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_admin_category"
+        android:title="@string/category_manager"
+        android:icon="@drawable/category"></item>
+    <item android:id="@+id/menu_admin_product"
+        android:title="@string/product_mamager"
+        android:icon="@drawable/product"></item>
+    <item android:id="@+id/menu_admin_higtlight_product"
+        android:title="@string/product_highlight_manager"
+        android:icon="@drawable/product_hl"></item>
+    <item android:id="@+id/menu_admin_updateinfor"
+        android:title="@string/update_fail"
+        android:icon="@drawable/update_infor"></item>
+
+    <item android:title="@string/account"
+        android:icon="@drawable/account">
+        <menu>
+            <item android:title="@string/infor_account"
+                android:id="@+id/menu_admin_infor_account"
+                android:icon="@drawable/information"></item>
+            <item android:title="@string/change_pass"
+                android:id="@+id/menu_admin_change_pass"
+                android:icon="@drawable/change_pass"></item>
+            <item android:title="@string/delete_account"
+                android:id="@+id/menu_admin_delete_account"
+                android:icon="@drawable/detele_account"></item>
+            <item android:title="@string/logout"
+                android:id="@+id/menu_admin_logout"
+                android:icon="@drawable/logout"></item>
+        </menu>
+    </item>
+</menu>

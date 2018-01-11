@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hcmus.yennhi0105.usedadvance">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logoapp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.SignInActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.UserActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.UpdateInforActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.AddCategoryActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.EditCategoryActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.ListCategoryActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.ListProductActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.AddProductActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Dialog.DialogCityActivity"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Dialog.DialogDistrictActivity"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.AdminListCategoryActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.SellProActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.LisProductCateActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.ListProductCatetActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.SellingMemberActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.EditProductActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.InformationAccountActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.ChangePassActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.ListProductAdminActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.HighLightProductActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.AddHLActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.ViewUpdateHLActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.BaseActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.BaseMemberActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.SellHLActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Activity.NewsActivity"></activity>
+    </application>
+
+</manifest>

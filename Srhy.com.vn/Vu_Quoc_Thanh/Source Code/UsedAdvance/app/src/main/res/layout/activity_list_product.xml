@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/background_ListView"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:completionThreshold="1"
+            android:id="@+id/autoCity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:hint="@string/input_city_search" />
+
+        <AutoCompleteTextView
+            android:completionThreshold="1"
+            android:id="@+id/autoDistrict"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:hint="@string/input_distict_search" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:drawableRight="@drawable/search"
+            android:id="@+id/editTextSearchListPro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/input_name_search" />
+    </LinearLayout>
+    <ListView
+        android:layout_weight="8"
+        android:id="@+id/lvProduct"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background_add"
+        android:weightSum="10"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarAddProMember"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:background="@color/toolbar"
+            ></android.support.v7.widget.Toolbar>
+
+        <View
+            android:background="@color/diliver"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:fillViewport="false"
+            android:layout_weight="10">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_full"/>
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:weightSum="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/plus"
+                        android:padding="10dp"
+                        android:id="@+id/imageView1Pro"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+
+                    <ImageView
+                        android:src="@drawable/plus"
+                        android:padding="10dp"
+                        android:id="@+id/imageView2Pro"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+
+                    <ImageView
+                        android:src="@drawable/plus"
+                        android:padding="10dp"
+                        android:id="@+id/imageView3Pro"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+
+                    <ImageView
+                        android:src="@drawable/plus"
+                        android:id="@+id/imageView4Pro"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="10dp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:background="@color/diliver"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"></View>
+
+                <EditText
+                    android:id="@+id/editTextNamePro"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Nhập tên sản phẩm" />
+
+                <View
+                    android:background="@color/diliver"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"></View>
+
+                <Spinner
+                    android:id="@+id/spinnerCatePro"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" />
+
+                <View
+                    android:background="@color/diliver"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"></View>
+
+                <EditText
+                    android:id="@+id/editTextPricePro"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:ems="10"
+                    android:hint="Nhập giá cần bán"
+                    android:inputType="number" />
+                <View
+                    android:background="@color/diliver"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"></View>
+
+                <EditText
+                    android:id="@+id/editTextDecrPro"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Mô tả về sản phẩm"
+                    android:inputType="textMultiLine" />
+                <View
+                    android:background="@color/diliver"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"></View>
+
+
+                <TextView
+                    android:id="@+id/textViewZonePro"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/chooceCity" />
+
+                <View
+                    android:background="@color/diliver"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"></View>
+
+                <Spinner
+                    android:id="@+id/spinnerTypePro"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" />
+
+                <View
+                    android:background="@color/diliver"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"></View>
+
+                <Spinner
+                    android:id="@+id/spinnerStatusPro"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" />
+
+                <View
+                    android:background="@color/diliver"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"></View>>
+
+                <Spinner
+                    android:id="@+id/spinnerStatusSellPro"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/progressBarAddProMember"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <LinearLayout
+        android:id="@+id/linearConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+
+        <ImageButton
+            android:layout_marginTop="150dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:id="@+id/imageButtonAdd247"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/confirm" />
+    </LinearLayout>
+
+</FrameLayout>

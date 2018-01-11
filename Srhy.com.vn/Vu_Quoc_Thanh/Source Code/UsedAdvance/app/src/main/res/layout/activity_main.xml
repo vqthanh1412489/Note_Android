@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#ffff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:background="@drawable/ct_edittext_login"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            style="@style/Login_Edittext"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ct_edittext_login"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+
+            android:id="@+id/editTextPassword"
+            style="@style/Login_Edittext"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textStyle="italic"
+        android:id="@+id/textViewForgetPass"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="200dp"
+        android:text="@string/forget_pass" />
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_gravity="right"
+            android:background="@drawable/ct_button_login"
+            android:id="@+id/imageButtonLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            app:srcCompat="@drawable/login" />
+
+        <ImageButton
+            android:background="@drawable/ct_button_signin"
+            android:id="@+id/imageButtonSignIn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            app:srcCompat="@drawable/signin" />
+
+    </LinearLayout>
+
+    <!--<ImageButton-->
+        <!--android:layout_gravity="center"-->
+        <!--android:background="@drawable/ct_button_logingoogle"-->
+        <!--android:id="@+id/imageButtonLoginGoogle"-->
+        <!--android:layout_width="280dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"/>-->
+
+</LinearLayout>

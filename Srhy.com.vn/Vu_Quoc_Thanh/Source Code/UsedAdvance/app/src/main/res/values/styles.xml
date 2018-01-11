@@ -1,0 +1,214 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="textViewSell">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">serif</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/textViewSell</item>
+    </style>
+
+    <style name="textViewSell.Content">
+        <item name="android:layout_weight">7</item>
+        <item name="android:textColor">@color/textViewSell.Content</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NameUserSell">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/NameUserSell</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="textViewSell.Content.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/Title</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="textViewSell.Content.Title.Price">
+        <item name="android:textColor">@color/Price</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="ButtonSell">
+        <item name="android:background">@null</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">2</item>
+
+    </style>
+    <style name="Title">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/Title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="TextViewH1">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/TextViewH1</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">serif</item>
+    </style>
+
+    <style name="Spinner">
+        <item name="android:textColor">@color/textViewSell.Content</item>
+    </style>
+
+    <style name="NameInfor">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/While</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Password">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="Login_Edittext">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/While</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="ImageButtonEdit">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:src">@drawable/edit</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--Edittext khi nhập liệu Thêm Sản phẩm đặc biệt-->
+    <style name="edtADDHL">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/textViewSell.Content</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--Listview HL cua AD min-->
+    <style name="textViewLineHL">>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="textViewLineHL.Title">
+        <item name="android:textColor">@color/Title</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textViewLineHL.Price">
+        <item name="android:textColor">@color/Price</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="textViewLineHL.DatePost">
+        <item name="android:textColor">@color/Date</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="textViewLineHL.Company">
+        <item name="android:textColor">@color/NameUserSell</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <!--Ten danh muc ViewHL-->
+    <style name="NameTitleHL">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/Title</item>
+    </style>
+
+    <style name="NameViewHL">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="NameViewHL.Key">
+        <item name="android:layout_weight">3</item>
+        <item name="android:textColor">@color/textViewSell.Content</item>
+    </style>
+
+    <style name="NameViewHL.Value">
+        <item name="android:layout_weight">6</item>
+        <item name="android:textColor">@color/Title</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+    <!--Stype dành cho Người dùng khi xem Sản phẩm hl-->
+    <style name="NameViewHL.Value.HL">
+        <item name="android:layout_weight">7</item>
+    </style>
+
+    <style name="ImageButtonHL">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!--Line_Product-->
+    <style name="TextView_Line_Product">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="TextView_Line_Product.Name">
+        <item name="android:textColor">@color/Title</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView_Line_Product.Price">
+        <item name="android:textColor">@color/Price</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

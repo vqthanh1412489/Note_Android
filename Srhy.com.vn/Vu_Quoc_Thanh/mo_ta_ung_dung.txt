@@ -1,0 +1,9 @@
+﻿Mô tả ứng dụng:
+- Ứng dụng cho phép mua bán hàng hoá online.
+Người bán sẽ tiến hành đăng sản phẩm của mình lên app, sản phấm sẽ được hiển thị trên danh sách sản phẩm cần bán.
+Mọi người có thể thấy được sản phẩm này khi truy cập vào app.
+Người mua tiến hành liên hệ với người bán để mua sản phẩm thông qua Facebook, Email , Số điện thoại, Địa chỉ mà người bán đã cung cấp khi đăng ký tài khoản
+
+- App chạy trên nền Firebase: Sử dụng các chức năng: Database Realtime, Storage, Authentication, Admod.
+- App cho phép người dùng đăng ký, đăng nhập tài khoản (Có thể cập nhật thêm đăng nhập bằng tài khoản Google, Facebook)
+- Đăng xuất, cập nhật thông tin người dùng kết hợp phần Authentication và Database Realtime

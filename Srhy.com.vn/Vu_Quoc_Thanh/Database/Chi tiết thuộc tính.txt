@@ -1,0 +1,73 @@
+﻿THÔNG TIN CHI TIẾT CÁC THUỘC TÍNH CỦA CÁC ĐỐI TƯỢNG
+
+User:
+ 	Id: định danh của người dùng. Dùng để sửa, xoá (lấy trên Firebase)
+	Username: Tên đăng nhập  (email)
+	Pass: mật khẩu
+	Name: Tên hiển thị trong App
+	Dia chỉ: Địa chỉ hiện tại để có thể mua hàng
+	So dien thoai: Để liên lạc khi mua hàng
+	Link FB: Để liên lạc khi mua hàng
+	Email dự phòng: Để khôi phục lại tài khoản khi bị xoá do Admin (Nếu cần thiết).
+	LoaiTK: Admin, Member tương ứng với các chức năng
+
+			- Đăng ký
+			- Đăng nhập
+			- Đăng xuất
+			- Đổi mật khẩu
+			- Xem thông tin tài khoản, Chỉnh sửa một số thông tin quan trọng (Email, Phone, Address)
+		1: Admin có thêm chức năng
+			+ Quản lý Danh mục : Thêm, xoá, sửa Danh mục
+			+ Quản lý Sản phẩm: Sửa, xoá sản phẩm của người dùng đăng lên
+			+ Quản lý sản phẩm Nổi bật (Sản phẩm do các công ty đặt hàng đăng trong app. Được hiển thị ở trang đầu tiên)
+
+		2: Member: Có thêm chức năng
+			+ Xem danh sách sản phẩm
+			+ Xem danh mục sản phẩm
+			+ Thêm sản phẩm
+			+ Sửa sản phẩm mình đã đăng (Không được phép xoá)
+	
+Category: Danh mục sản phẩm chứa nhiều sản phẩm cùng loại:
+ 
+	+ ID (String): ID dùng để xoá, sửa danh mục (Nên đặt theo tên viết tắt)
+	+ Name (String): Tên danh mục. Vd: Bất động sản, Thiết bị thông minh, Đồ dùng gia đình....
+	+ ICon: (String) : Link chứa hình ảnh của Danh mục
+
+Produce: Sản phẩm do người dùng đăng lên app
+	     
+	+ Id (String): Dùng để xoá, sửa sản phẩm. (Lấy từ thuộc tính getKey() của Firebase)
+	+ ListIcon (ArrayList<String>): Danh sách hình của sản phẩm
+	+ Title (String): Tên sản phẩm
+	+ Category (String): Danh mục chứa sản phẩm (Lưu theo mã viết tắt)
+	+ Price (int): Giá tiền của sản phẩm (Nếu cần mua, cần cho: thì là 0)
+	+ Descritption (String): Mô tả
+	+Zone (String): Vùng bán: vd Thành Phố HCM/ Quận Thủ Đức.. dùng để tìm kiếm sản phẩm..
+	+Type (int): Cần bán (1), cần mua(2), cần cho(3).
+	+ Status: Mới (1), qua sử dụng(2) : Hiện trạng của sản phẩm hiện tại đang bán
+	+ User đăng sản phẩm: Để xác nhận người cần liên khi mua. (Lấy id của tài khoản đang đăng nhập)
+	+ StatusSell: (1)Public, (2)private (StatusSell) : Nếu không bán nữa thí sửa thành private.
+	
+HighLightProduct : sản phẩm được đăng ở đầu trang
+	+ Id (String): lấy từ Firebase
+	+Ten sản phẩm (String)
+	+Giá (int)
+	+Mô tả (String)
+	+Ten Công ty đăng (String)
+	+ Địa chỉ bán (String)
+	+ Phone (String)
+	+ email (String)
+	+ Ngày đăng (String): Lấy từ Hệ thống khi đăng
+	+ Link Video giới thiệu:Lấy ID của Video trên Youtube
+	+ Tình trạng đăng: (1): Private , (2) Public
+	
+Admod: 
+
+	ID ứng dụng: 
+		ca-app-pub-6317808399413254~2123658523
+	Ad unit ID: 
+		ca-app-pub-6317808399413254/3600391729 
+		ca-app-pub-6317808399413254/3460790929 
+
+
+
+

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:background="@color/While"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <!--Toolbar-->
+        <android.support.v7.widget.Toolbar
+            android:background="@color/toolbar"
+            android:id="@+id/toolBarUser"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayoutUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.design.widget.TabLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPagerUser"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"></android.support.v4.view.ViewPager>
+
+        <TextView
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/textViewHLProUser"
+            android:textSize="20sp"
+            android:text="@string/hl_product"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/recylerViewUser"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"></android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:text="Đọc tin tức"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/recylerViewNewsUser"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"></android.support.v7.widget.RecyclerView>
+
+
+        <!--<com.google.android.gms.ads.AdView-->
+            <!--android:id="@+id/adViewUser"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--ads:adSize="BANNER"-->
+            <!--ads:adUnitId="@string/banner_ad_unit_id">-->
+        <!--</com.google.android.gms.ads.AdView>-->
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationViewAdmin"
+        app:headerLayout="@layout/navigationview_admin"
+        app:menu="@menu/menu_navigationview_admin"
+        android:layout_gravity="start">
+
+    </android.support.design.widget.NavigationView>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationView_menber"
+        app:headerLayout="@layout/navigationview_member"
+        app:menu="@menu/menu_navigationview_menber"
+        android:layout_gravity="end"
+        ></android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
+

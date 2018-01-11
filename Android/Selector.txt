@@ -1,0 +1,16 @@
+﻿Button:
+android:state_pressed: Ấn xuống
+
+Checkbox:
+android:state_checked: Tích chọn
+android:state_focused: Focused đến
+
+Radion Button:
+android:state_checked:
+android:state_focused:
+
+Seekbar:
+android:state_enabled:
+
+
+

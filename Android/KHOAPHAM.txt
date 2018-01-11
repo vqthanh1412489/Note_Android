@@ -1,0 +1,69 @@
+﻿
+
+match_parent: Lấy hết màn hình
+wrap_content: Tự động lấy kích thước bao quanh nội dung
+Note:
+	- Tạo Project: Cách đặt tên: Tênmình.CơQuan.com
+	- Các khái niệm: View - View Group
+	- LinearLayout: Có thuộc tính: Orientation (Horizontol/ Vertical)
+	- Một số thuộc tính bên Text như: textColor, Backgroup, size, width, height.
+	- Dùng Text nhanh hơn dùng phần Property.
+
+
+Linearlayout:
+
+- android:layout_weight="x" : Độ chia màn hình của control. 
+tùy vào chỉ số  android:weightSum="x" mà độ chia là khác nhau. lấy x làm 100%.
+android:layout_height="0dp" hoac android:layout_width="0dp" : Chia chính xác khi có chữ. Chia theo chiều nào thì lấy chiều đó
+bằng 0dp. Chia theo chiều ngang thì lấy width = 0dp, chia theo chieu doc thi lay height = 0dp.
+android:weightSum="x" : Chia màn hình thành x phần bằng nhau.
+
+RelativeLayout:
+
+
+* Kiểm tra chuỗi rỗng (lấy String: chuoi )
+1. chuoi.isEmpty() : Kiểm tra chuỗi có rỗng hay không?
+2. TextUtils.isEmpty(chuoi) : nt
+3. chuoi.matches ("") : Có TRÙNG với chuỗi trong "" hay không!: ở đây là RỖNG
+4. chuoi.equals(""): có BẰNG với chuỗi trong "" hay không! : ở đay là RỖNG
+5. chuoi.trim().length() == 0: Tính độ dài của chuỗi: Ở đây lấy độ dài chuỗi Rỗng bằng 0
+
+*Để in 1 phần từ nào đó mà không cần in ra ứng dụng ra dùng:
+	Nhớ thêm vào vòng for ();
+	Log.d("BBB", "" + _number); // Xem thong bao trong phan code chay cua he thong!
+	Nhập vào ô tìm kiếm "BBB" xem thông báo _number được in ra.
+
+
+*Kiểm tra 1 chuỗi có phải là toàn số hay không
+(Còn nếu éo muốn kiểm tra thì cho chúng nó nhập vào số thôi, khỏi mệt!)
+1. Ép chuỗi đó về số. Để trong Try ....  Catch.. nếu ép đc thì là số. còn k ép được thì nhả ra Catch kiểm tra lại.
+
+
+- Ẩn button: dùng setVisibility(View.GONE);
+- Hiện button: setVisibility(View.VISIBLE);
+
+
+ProgressBar:
+	style="@android:style/Widget.ProgressBar.Horizontal": Thanh ProgressBar dạng đường thẳng.
+	(nếu không có thuộc tính này thì thanh Progressbar có dạng vòng tròn). Còn nhiều định dạng khác
+	progress : Giá trị của thanh chạy
+	secondProgress :Giá trị load trước
+	max : Tổng giá trị của thanh ProgressBar
+
+CheckBox:
+	setOnCheckedChangeListener: Khi thay đổi giá trị trên checkbox thì sẽ xảy ra sự kiện liền.
+	isChecked(): Có check hay không (boolean).
+
+ManHinh:
+	ManHinh.setBackgroundColor(Color.rgb(100,120,100)); : Đặt màu cho màn hình, chỉnh độ pha màu của 3 màu R, G, B.
+
+
+- Chuyển ID trong resource thành nội dung:
+		String: getResources().getString(R.string.......);
+
+
+100dp = 0.625 inch
+
+
+
+

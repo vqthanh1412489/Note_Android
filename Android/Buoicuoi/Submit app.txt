@@ -1,0 +1,26 @@
+﻿1. Tạo keystore:  *.jks : Nhơ lưu thông tin nhé!
+	 (Cả thông tin về keystore và alias _ ten va _ password)	
+2. Nhúng *.jks vào file *.apk
+3. Chuyển file apk từ debug -> Release
+4. Up Lên google play thôi!!!
+
+
+Khi update nhớ đổi versionCode: tăng lên
+
+Đồ án: nộp 27/3/2017 
+	- email: khoaphamtraining@gmail.com
+	- chủ đề:  Đồ án Android - Vũ Quốc Thanh - KG 26/09/2016
+	
+Nội dung: - từ những app đã học
+	- Gửi link đính kèm
+	- Nội dung gửi:
+		+ Source code
+		+ File word: Mô tả app: Chức năng: Giới thiệu. Mới CHƯA HỌC
+		+  Video demo
+		+ Submit googlePlay : +1
+
+	- Lưu ý:  	+ Database: chụp hình cấu trúc database
+		+ Nếu có user: Cho Username + password		
+
+Snagit Editter
+

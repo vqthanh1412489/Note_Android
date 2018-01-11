@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Sản phẩm">
+        <menu>
+            <item android:id="@+id/menu_member_addpro"
+                android:title="Thêm sản phẩm"
+                android:icon="@drawable/add_pro"></item>
+            <item android:id="@+id/menu_menber_allProduct"
+                android:title="Tất cả sản phẩm"
+                android:icon="@drawable/all_pro"></item>
+            <item android:id="@+id/menu_menber_sellProduct"
+                android:title="Sản phẩm đang bán"
+                android:icon="@drawable/selling"></item>
+            <item android:id="@+id/menu_member_category"
+                android:title="Danh mục sản phẩm"
+                android:icon="@drawable/category"></item>
+        </menu>
+    </item>
+
+    <item android:title="Tài khoản">
+        <menu>
+            <item android:id="@+id/menu_menber_infor"
+                android:title="Thông tin tài khoản"
+                android:icon="@drawable/information"></item>
+            <item android:id="@+id/menu_menber_changePass"
+                android:title="Đổi mật khẩu"
+                android:icon="@drawable/change_pass"></item>
+            <item android:id="@+id/menu_menber_delete_account"
+                android:title="Xóa tài khoản"
+                android:icon="@drawable/detele_account"></item>
+            <item android:id="@+id/menu_menber_logout"
+                android:title="Đăng xuất"
+                android:icon="@drawable/logout"></item>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="diliver">#cfcdcd</color>
+    <color name="textViewSell">#a3c2c2</color>
+    <color name="textViewSell.Content">#0e0e10</color>
+    <color name="NameUserSell">#32d134</color>
+    <color name="Title">#0925f4</color>
+    <color name="Price">#d40b30</color>
+    <color name="TextViewH1">#7d87e6</color>
+    <color name="While">#ffffff</color>
+    <color name="toolbar">#8c9def</color>
+    <color name="Date">#e5ed00</color>
+    <color name="line_itemListView">#f2eded</color>
+    <color name="background_ListView">#dcded8</color>
+    <color name="public_color">#7991e7</color>
+    <color name="private_color">#e9a6a6</color>
+    <color name="background_add">#bbbff1</color>
+
+</resources>

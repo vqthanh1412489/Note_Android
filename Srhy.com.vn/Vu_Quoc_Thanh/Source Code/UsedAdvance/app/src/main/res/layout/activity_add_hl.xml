@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#c9e19a"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="25sp"
+        style="@style/Title"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/add_hl" />
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editTextNameHL"
+                style="@style/edtADDHL"
+                android:ems="10"
+                android:hint="@string/input_name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextPriceHL"
+                style="@style/edtADDHL"
+                android:ems="10"
+                android:hint="@string/input_price"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editTextDescrHL"
+                style="@style/edtADDHL"
+                android:ems="10"
+                android:hint="@string/input_descrition"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/editTextNameCompanyHL"
+                style="@style/edtADDHL"
+                android:ems="10"
+                android:hint="@string/input_nameCompamy"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextPhoneHL"
+                style="@style/edtADDHL"
+                android:ems="10"
+                android:hint="@string/input_phone"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/editTextEmailHl"
+                style="@style/edtADDHL"
+                android:ems="10"
+                android:hint="@string/input_email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/editTextAddressHL"
+                style="@style/edtADDHL"
+                android:ems="10"
+                android:hint="@string/input_address"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextLinkVideoHL"
+                style="@style/edtADDHL"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/input_idlinkVideo" />
+
+            <Spinner
+                android:id="@+id/spinnerStatusSellHL"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"
+        android:background="@null"
+        android:id="@+id/imageButtonAddHL"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/ok48" />
+</LinearLayout>

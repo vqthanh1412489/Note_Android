@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="14"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/youtubePlayerViewHLUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.google.android.youtube.player.YouTubePlayerView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textViewDateViewHlUser"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:text="TextView"
+            android:textColor="@color/Date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:id="@+id/textViewNameViewHlUser"
+            style="@style/NameTitleHL"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView25"
+            style="@style/NameViewHL.Key"
+            android:text="@string/price" />
+
+        <TextView
+            android:id="@+id/textViewPriceViewHLUser"
+            style="@style/NameViewHL.Value.HL"
+            android:text="TextView"
+            android:textColor="@color/Price"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView26"
+            style="@style/NameViewHL.Key"
+            android:text="@string/description" />
+
+        <TextView
+            android:id="@+id/textViewDescrViewHLUser"
+            style="@style/NameViewHL.Value.HL"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView27"
+            style="@style/NameViewHL.Key"
+            android:text="@string/company" />
+
+        <TextView
+            android:id="@+id/textViewCompanyViewHlUser"
+            style="@style/NameViewHL.Value.HL"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView28"
+            style="@style/NameViewHL.Key"
+            android:text="@string/address" />
+
+        <TextView
+            android:id="@+id/textViewAddressViewHlUser"
+            style="@style/NameViewHL.Value.HL"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView29"
+            style="@style/NameViewHL.Key"
+            android:text="@string/status" />
+
+        <TextView
+            android:id="@+id/textViewStatusViewHLUser"
+            style="@style/NameViewHL.Value.HL"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/imageButtonGmailHLUser"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/gmail" />
+
+        <ImageButton
+            android:id="@+id/imageButtonSMSHLUser"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            app:srcCompat="@drawable/sms" />
+
+        <ImageButton
+            android:id="@+id/imageButtonCallHLUser"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/call" />
+    </LinearLayout>
+
+</LinearLayout>

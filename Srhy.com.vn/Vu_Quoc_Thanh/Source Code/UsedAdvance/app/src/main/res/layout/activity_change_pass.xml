@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="8"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/While"
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_password" />
+
+    <EditText
+        android:drawableLeft="@drawable/pass"
+        android:id="@+id/editTextPassChange"
+        style="@style/Password"
+        android:background="@drawable/ct_edittext_changepass"
+        android:ems="10"
+        android:hint="@string/input_new_password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/While"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/retype_new_password" />
+
+    <EditText
+        android:drawableLeft="@drawable/retypepass"
+        android:background="@drawable/ct_edittext_changepass"
+        android:hint="@string/retype_input_new_password"
+        android:id="@+id/editTextRetypePassChange"
+        style="@style/Password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+
+    <ImageButton
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:id="@+id/imageButtonChangePass"
+        android:layout_width="wrap_content"
+        android:layout_gravity="right"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ok48" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"></View>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewChangePass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="LARGE_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id_big">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>

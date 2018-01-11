@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ProgressBar
+        android:layout_marginTop="200dp"
+        android:id="@+id/progressBarSI"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/linearSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:src="@drawable/signup" />
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:fillViewport="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/editTextNameSI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/input_name_sign"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/editTextUsernameSI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/input_email_sign"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/editTextPassSI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/input_pass_sign"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/editTextRetypeSI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/input_retypass_sign"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/editTextPhoneSI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/input_phone_sign"
+                    android:inputType="phone" />
+
+                <EditText
+                    android:id="@+id/editTextEmailSI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/input_email2_sign"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/editTextAddressSI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/input_address_sign"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/editTextFaceSI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/input_face_sign"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/chooceIcon" />
+
+                <ImageView
+                    android:id="@+id/imageViewIconSI"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/chonhinh" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageButton
+            android:background="@drawable/ct_button_ok"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:id="@+id/imageButtonOkSI"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ok48" />
+    </LinearLayout>
+
+
+</FrameLayout>
